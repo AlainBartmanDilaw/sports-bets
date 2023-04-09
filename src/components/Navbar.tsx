@@ -1,6 +1,6 @@
 import IMenuItem from "../IMenuItem";
 import { menuItems } from "../menuItems";
-import MenuItems from "./MenuItem";
+import MenuItems from "./MenuItems";
 
 const Navbar = () => {
     return (
