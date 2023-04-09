@@ -1,9 +1,5 @@
-export interface IMenuItem
-{
-    title: string;
-    url?: string;
-    submenu?: IMenuItem[]
-}
+import { IMenuItem } from "./IMenuItem";
+
 export const menuItems: IMenuItem[] = [
     {
         title: 'Home',
