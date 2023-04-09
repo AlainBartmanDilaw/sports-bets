@@ -2,20 +2,20 @@ import IMenuItem from '../IMenuItem';
 import Dropdown from './Dropdown';
 
 type ItemProps = {
-    items: IMenuItem;
+    item: IMenuItem;
 }
-const MenuItems: React.FC<ItemProps> = ({ items }) => {
+const MenuItems: React.FC<ItemProps> = ({ item }) => {
     return (
         <li className="menu-items">
-            {items.submenu ? (
+            {item.submenu ? (
                 <>
                     <button type="button" aria-haspopup="menu">
-                        {items.title}{' '}
+                        {item.title}{' '}
                     </button>
-                    <Dropdown submenus={items.submenu} />
+                    <Dropdown submenus={item.submenu} />
                 </>
             ) : (
-                <a href={items.url}>{items.title}</a>
+                <a href={item.url}>{item.title}</a>
             )}
         </li>
     );
