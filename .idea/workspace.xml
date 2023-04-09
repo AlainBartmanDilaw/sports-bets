@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fc0d426-1768-414d-810b-3440b9ae1220" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menuItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="2fc0d426-1768-414d-810b-3440b9ae1220" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +38,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "C:\\Users\\Alain\\Documents\\Projects\\sports-bets\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Alain\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-1\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680911481676</updated>
-      <workItem from="1680911482844" duration="6349000" />
+      <workItem from="1680911482844" duration="6658000" />
     </task>
     <servers />
   </component>
