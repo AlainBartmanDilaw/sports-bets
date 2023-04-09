@@ -1,26 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Menu from './Menu';
+
+const App: React.FC = () => {
+  const menuItems = [
+    {
+      title: 'Home',
+      url: '/',
+    },
+    {
+      title: 'About',
+      url: '/about',
+      children: [
+        {
+          title: 'Team',
+          url: '/about/team',
+          children:[
+            {
+              title: 'A',
+              url: '/about/a',
+            },
+            {
+              title: 'B',
+              url: '/about/b',
+            },
+          ]
+        },
+        {
+          title: 'History',
+          url: '/about/history',
+        },
+      ],
+    },
+    {
+      title: 'Contact',
+      url: '/contact',
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Menu menuItems={menuItems} />
+      </div>
   );
-}
+};
+
 
 export default App;
