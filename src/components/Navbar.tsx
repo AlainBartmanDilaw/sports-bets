@@ -1,15 +1,13 @@
+import IMenuItem from "../IMenuItem";
 import { menuItems } from "../menuItems";
+import MenuItems from "./MenuItem";
 
 const Navbar = () => {
     return (
         <nav>
             <ul className="menus">
-                {menuItems.map((menu, index: number) => {
-                    return (
-                        <li className="menu-items" key={index}>
-                            <a href={menu.url}>{menu.title}</a>
-                        </li>
-                    );
+                {menuItems.map((menu: IMenuItem, index: number) => {
+                    return <MenuItems item={menu} key={index} />;
                 })}
             </ul>
         </nav>
