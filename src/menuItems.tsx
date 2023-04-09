@@ -1,4 +1,4 @@
-import { IMenuItem } from "./IMenuItem";
+import IMenuItem from "./IMenuItem";
 
 export const menuItems: IMenuItem[] = [
     {
