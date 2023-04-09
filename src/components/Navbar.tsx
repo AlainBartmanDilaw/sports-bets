@@ -1,7 +1,17 @@
+import { menuItems } from "../menuItems";
+
 const Navbar = () => {
     return (
         <nav>
-            <ul className="menus">Nav Items here</ul>
+            <ul className="menus">
+                {menuItems.map((menu, index: number) => {
+                    return (
+                        <li className="menu-items" key={index}>
+                            <a href={menu.url}>{menu.title}</a>
+                        </li>
+                    );
+                })}
+            </ul>
         </nav>
     );
 };
