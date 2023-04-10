@@ -1,17 +1,20 @@
 import IMenuItem from "../IMenuItem";
+import MenuItems from './MenuItems';
 
 // Define your component props
 type SubItemProps = {
     submenus: IMenuItem[];
     dropdown: boolean;
+    depthLevel: number;
 }
-const Dropdown: React.FC<SubItemProps> = ({submenus, dropdown}) => {
+const Dropdown: React.FC<SubItemProps> = ({submenus, dropdown, depthLevel}) => {
+    depthLevel += 1;
+    const dropdownClass: string = depthLevel > 1 ? "dropdown-submenu" : "";
     return (
-        <ul className={`dropdown ${dropdown ? "show" : ""}`}>
+        <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : ""}`}>
             {submenus.map((submenu: IMenuItem, index: number) => (
-                <li key={index} className="menu-items">
-                    <a href={submenu.url}>{submenu.title}</a>
-                </li>
+                <MenuItems item={submenu} key={index}
+                           depthLevel={depthLevel}/>
             ))}
         </ul>
     );

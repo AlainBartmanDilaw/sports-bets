@@ -5,8 +5,9 @@ import Dropdown from './Dropdown';
 
 type ItemProps = {
     item: IMenuItem;
+    depthLevel: number;
 }
-const MenuItems: React.FC<ItemProps> = ({ item }) => {
+const MenuItems: React.FC<ItemProps> = ({ item, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     return (
         <li className="menu-items">
@@ -16,10 +17,12 @@ const MenuItems: React.FC<ItemProps> = ({ item }) => {
                             aria-expanded={dropdown ? "true" : "false"}
                             onClick={() => setDropdown((prev) => !prev)}
                     >
-                        {item.title}{' '}
+                        {item.title}{" "}
+                        {depthLevel>0?<span>&raquo;</span>:<span className="arrow"/> }
                     </button>
                     <Dropdown submenus={item.submenu}
                               dropdown={dropdown}
+                              depthLevel={depthLevel}
                     />
                 </>
             ) : (
