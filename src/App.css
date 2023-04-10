@@ -82,6 +82,16 @@ button span {
   border-left: 0.32em solid transparent;
 }
 
+.arrow-right::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-left: 0.42em solid;
+  border-top: 0.32em solid transparent;
+  border-bottom: 0.32em solid transparent;
+}
+
 .dropdown {
   position: absolute;
   right: 0;

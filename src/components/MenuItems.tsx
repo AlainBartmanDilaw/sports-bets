@@ -33,7 +33,7 @@ const MenuItems: React.FC<ItemProps> = ({item, depthLevel}) => {
                             onClick={() => setDropdown((prev) => !prev)}
                     >
                         {item.title}{" "}
-                        {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow"/>}
+                        {depthLevel > 0 ? <span className="arrow-right"/> : <span className="arrow"/>}
                     </button>
                     <Dropdown submenus={item.submenu}
                               dropdown={dropdown}
