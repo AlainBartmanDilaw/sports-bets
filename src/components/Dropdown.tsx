@@ -1,3 +1,4 @@
+import React from 'react';
 import IMenuItem from "../IMenuItem";
 import MenuItems from './MenuItems';
 
