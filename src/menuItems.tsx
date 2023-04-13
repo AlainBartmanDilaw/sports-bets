@@ -1,4 +1,5 @@
 import IMenuItem from "./IMenuItem";
+export const K_About: string ="/about"
 
 export const menuItems: IMenuItem[] = [
     {
@@ -45,6 +46,6 @@ export const menuItems: IMenuItem[] = [
     },
     {
         title: 'About',
-        url: '/about',
+        url: K_About,
     },
 ];
