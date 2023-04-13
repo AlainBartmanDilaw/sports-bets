@@ -16,7 +16,6 @@ export const menuItems: IMenuItem[] = [
             {
                 title: 'web development',
                 url: 'web-dev',
-
                 submenu: [
                     {
                         title: 'Frontend',
@@ -24,6 +23,7 @@ export const menuItems: IMenuItem[] = [
                     },
                     {
                         title: 'Backend',
+                        url: '',
                         submenu: [
                             {
                                 title: 'NodeJS',

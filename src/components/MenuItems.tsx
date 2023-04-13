@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from 'react-router-dom';
 
 import IMenuItem from '../IMenuItem';
 import Dropdown from './Dropdown';
@@ -41,7 +42,7 @@ const MenuItems: React.FC<ItemProps> = ({item, depthLevel}) => {
                     />
                 </>
             ) : (
-                <a href={item.url}>{item.title}</a>
+                <Link to={item.url}>{item.title}</Link>
             )}
         </li>
     );
