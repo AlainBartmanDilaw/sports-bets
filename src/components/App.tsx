@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { K_About } from '../menuItems';
 import About from '../routes/About';
 import Home from '../routes/Home';
