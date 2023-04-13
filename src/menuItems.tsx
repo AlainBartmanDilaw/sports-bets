@@ -1,26 +1,51 @@
-import React from 'react';
+import IMenuItem from "./IMenuItem";
+export const K_About: string ="/about"
 
-interface MenuItem {
-    title: string;
-    url?: string;
-    children?: MenuItem[];
-}
-
-interface Props {
-    menuItems: MenuItem[];
-}
-
-const Menu: React.FC<Props> = ({ menuItems }) => {
-    return (
-        <ul className="menu">
-            {menuItems.map((menuItem, index) => (
-                <li key={index}>
-                    <a href={menuItem.url}>{menuItem.title}</a>
-                    {menuItem.children && <Menu menuItems={menuItem.children} />}
-                </li>
-            ))}
-        </ul>
-    );
-};
-
-export default Menu;
+export const menuItems: IMenuItem[] = [
+    {
+        title: 'Home',
+        url: '/',
+    },
+    {
+        title: 'Services',
+        url: '/services',
+        submenu: [
+            {
+                title: 'web design',
+                url: 'web-design',
+            },
+            {
+                title: 'web development',
+                url: 'web-dev',
+                submenu: [
+                    {
+                        title: 'Frontend',
+                        url: 'frontend',
+                    },
+                    {
+                        title: 'Backend',
+                        url: '',
+                        submenu: [
+                            {
+                                title: 'NodeJS',
+                                url: 'node',
+                            },
+                            {
+                                title: 'PHP',
+                                url: 'php',
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                title: 'SEO',
+                url: 'seo',
+            },
+        ],
+    },
+    {
+        title: 'About',
+        url: K_About,
+    },
+];
