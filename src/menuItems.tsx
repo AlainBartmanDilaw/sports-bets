@@ -28,6 +28,9 @@ export const menuItems: IMenuItem[] = [
                 url: K_WebDesign,
             },
             {
+                title: 'Separator',
+            },
+            {
                 title: 'web development',
                 url: 'web-dev',
                 submenu: [

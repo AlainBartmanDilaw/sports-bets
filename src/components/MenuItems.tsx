@@ -42,7 +42,7 @@ const MenuItems: React.FC<ItemProps> = ({item, depthLevel}) => {
                     />
                 </>
             ) : (
-                <Link to={item.url}>{item.title}</Link>
+item.url ? <Link to={item.url}>{item.title}</Link> : <li className="separator"></li>
             )}
         </li>
     );

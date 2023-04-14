@@ -1,7 +1,7 @@
 interface IMenuItem
 {
     title: string;
-    url: string;
+    url?: string;
     submenu?: IMenuItem[]
 }
 export default IMenuItem;
