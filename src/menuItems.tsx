@@ -1,12 +1,23 @@
-import IMenuItem from "./IMenuItem";
+import IMenuItem from './IMenuItem';
 
 export const K_About: string = "/about"
 export const K_WebDesign: string = 'web-design';
 export const K_SEO: string = 'SEO';
+export const K_Comptes: string = 'Comptes';
 export const menuItems: IMenuItem[] = [
     {
         title: 'Home',
         url: '/',
+    },
+    {
+        title: 'Administration',
+        url: '',
+        submenu:[
+            {
+                title: 'Comptes',
+                url: K_Comptes,
+            }
+        ]
     },
     {
         title: 'Services',
