@@ -1,6 +1,8 @@
 import IMenuItem from "./IMenuItem";
-export const K_About: string ="/about"
 
+export const K_About: string = "/about"
+export const K_WebDesign: string = 'web-design';
+export const K_SEO: string = 'SEO';
 export const menuItems: IMenuItem[] = [
     {
         title: 'Home',
@@ -12,7 +14,7 @@ export const menuItems: IMenuItem[] = [
         submenu: [
             {
                 title: 'web design',
-                url: 'web-design',
+                url: K_WebDesign,
             },
             {
                 title: 'web development',
@@ -40,7 +42,7 @@ export const menuItems: IMenuItem[] = [
             },
             {
                 title: 'SEO',
-                url: 'seo',
+                url: K_SEO,
             },
         ],
     },

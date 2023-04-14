@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { K_About } from '../menuItems';
-import About from '../routes/About';
-import Home from '../routes/Home';
+import { K_About, K_SEO, K_WebDesign } from '../menuItems';
+import * as myRoutes from '../routes';
 import Layout from './Layout';
 
 const App = () => {
@@ -9,8 +8,10 @@ const App = () => {
     <>
         <Routes>
             <Route path = "/" element = {<Layout/>}>
-                <Route index element={<Home/>}/>
-                <Route path={K_About} element={<About/>}/>
+                <Route index element={<myRoutes.Home/>}/>
+                <Route path={K_About} element={<myRoutes.About/>}/>
+                <Route path={K_WebDesign} element={<myRoutes.WebDesign/>}/>
+                <Route path={K_SEO} element={<myRoutes.SEO/>}/>
             </Route>
         </Routes>
     </>
