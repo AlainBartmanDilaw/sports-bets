@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["components/Pages/*"],
+      "@utils/*": ["utils/*"],
+      // Add more aliases if needed
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -21,6 +28,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
